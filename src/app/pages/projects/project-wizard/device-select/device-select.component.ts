@@ -43,6 +43,7 @@ export class DeviceSelectComponent implements OnChanges {
 
   deviceChanged(event): void {
     this.selectedDevice.emit(event.value);
+    this.selectForm.patchValue({ selectDevice: event.value }); //force UI with patch value
   }
 
   /**

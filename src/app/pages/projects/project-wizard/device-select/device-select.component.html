@@ -7,7 +7,7 @@
                 <div id="fpack-col-sel-dev" class="col-6">
 
                     <hyt-select 
-                        [form]="selectForm" formControlName="selectDevice" name="selectDevice"
+                        [form]="selectForm" formControlName="selectDevice" id="selectDevice" name="selectDevice"
                         [options]="devicesOptions" i18n-label="@@HYT_source" label="Source"
                         (changeFn)="deviceChanged($event)" [sortingAlgorithm]="'A-Z'" [isSortable]="true"
                     >
